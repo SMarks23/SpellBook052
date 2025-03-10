@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="viewport" content="user-scalable=no">
+
+</head>
+
+<body>
+    <div id=mainPageTitleCont>
+        <h1>tome of<br>spells</h1>
+    </div>
+    <div id=mainPageButtonCont>
+        <a href="./HTML/bookCreator.html">Create</a>
+        <a>View</a>
+    </div>
+
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js')
+                .then(() => console.log("Service worker registered"))
+                .catch((error) => console.log("Service worker failed", error));
+        }
+    </script>
+</body>
+
+</html>
