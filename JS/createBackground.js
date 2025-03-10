@@ -6,4 +6,6 @@ import{
 } from './createFeats.js';
 
 console.log(activeFeats);
-document.body.style.backgroundColor = "red";
+if(activeFeats.length == 0){
+    document.body.style.backgroundColor = "red";
+}
